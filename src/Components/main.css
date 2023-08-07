@@ -5,7 +5,7 @@
     --Magnolia: hsl(217, 100%, 97%);
     --Alabaster: hsl(231, 100%, 99%);
     --White: hsl(0, 0%, 100%);
-    --blueNumber:rgb(75, 75, 170);
+    --blueNumber:rgb(55, 55, 138);
 }
 
 body{
@@ -29,8 +29,7 @@ body{
     height: 100%;
     background-size: contain;
     width: 60%;
-    margin-left: 10px;
-    border-radius: 25px;
+    
     
 }
 .asideBar1 nav{
@@ -95,4 +94,35 @@ body{
 .mainContainer .head-text{
     font-size: 13px ;
     color: var(--Cool-gray);
+}
+.inputContainer{
+    margin-top: 20px;
+}
+.inputContainer input{
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid var(--Cool-gray);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 70%;
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--blueNumber);
+}
+.inputContainer label{
+    position: relative;
+    top: 15px;
+    color: rgb(20, 20, 49);
+    font-weight: 300;
+}
+button{
+    margin-top: 90px;
+    margin-left: 15rem;
+    padding: 12px;
+    color: white;
+    border: none;
+    background-color: var(--blueNumber);
+    border-radius: 5px;
+    cursor: pointer;
 }
