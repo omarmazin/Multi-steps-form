@@ -11,7 +11,7 @@ export default function Page1(){
     const emailHandler = (event)=>{
         setemailInput(event.target.value)
     }
-    const phoneHnadler = (event) =>{
+    const phoneHandler = (event) =>{
         setphoneNumber(event.target.value)
     }
 
@@ -98,7 +98,7 @@ export default function Page1(){
                             type="text"
                             id="phoneInput"
                             value={phoneNumber}
-                            onChange={phoneHnadler}
+                            onChange={phoneHandler}
                             placeholder="e.g +1 234 567"
                             required
                         />
