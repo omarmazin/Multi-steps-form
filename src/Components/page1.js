@@ -4,9 +4,7 @@ export default function Page1(){
     const [nameInput, setnameInput] = useState('');
     const [emailInput, setemailInput] = useState('');
     const [phoneNumber, setphoneNumber] = useState('');
-    //   const [isEmpty, setIsEmpty] = useState(false);
-
-
+    
     const nameHandler = (event) => {
         setnameInput(event.target.value);
     };
@@ -16,6 +14,15 @@ export default function Page1(){
     const phoneHnadler = (event) =>{
         setphoneNumber(event.target.value)
     }
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        localStorage.setItem("name",nameInput)
+        localStorage.setItem("email",emailInput)
+        localStorage.setItem("phone",phoneNumber)
+        
+      };
+    
     const [items,setItems] = useState([{
         id:1,
         step:1,
@@ -60,7 +67,7 @@ export default function Page1(){
                 </nav>
             </aside>
             <main className="mainContainer">
-                <form>
+                <form onSubmit={handleSubmit}>
                     <p className="head">Personal Info</p>
                     <p className="head-text">Please provide your name, email address , and phone number .</p>
                     <div className="inputContainer">
@@ -71,6 +78,7 @@ export default function Page1(){
                             value={nameInput}
                             onChange={nameHandler}
                             required
+                            placeholder="e.g. Omar Bawzir"
                         />
                         <br/>
                         <label htmlFor="emailInput">Email :</label>
@@ -81,6 +89,7 @@ export default function Page1(){
                             value={emailInput}
                             onChange={emailHandler}
                             required
+                            placeholder="e.g. OmarBawzir@lorem.com"
                         />
                         <br/>
                         <label htmlFor="phoneInput">Phone Number :</label>
