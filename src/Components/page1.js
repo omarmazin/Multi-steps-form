@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./main.css"
+import "./page1.css";
 export default function Page1(){
     const [nameInput, setnameInput] = useState('');
     const [emailInput, setemailInput] = useState('');
@@ -20,7 +20,7 @@ export default function Page1(){
         localStorage.setItem("name",nameInput)
         localStorage.setItem("email",emailInput)
         localStorage.setItem("phone",phoneNumber)
-        
+        window.location.href = '/src/Components/page2'
       };
     
     const [items,setItems] = useState([{

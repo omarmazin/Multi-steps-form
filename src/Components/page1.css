@@ -130,3 +130,49 @@ input:invalid {
     border: 2px solid red;
     background-color: #FFD9D9;
   }
+
+@media only screen and (max-width: 800px) {
+    body {
+        font-size: 11px;
+    }
+    .page1{
+       background-color: transparent;
+       margin: 0px;
+
+    }
+    .asideBar1{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background-image: url('../assets/bg-sidebar-mobile.svg');
+        padding: 0px;
+        padding-left: 1px;
+        
+    }
+    .mainContainer{
+        position: absolute;
+        z-index: 1;
+        margin-top: 50px;
+        margin-left: 35px;
+        background-color: var(--Alabaster);
+        border-radius: 10px;
+        margin-top: 6rem;
+        height: 85svh;
+        width: 85%;
+    }
+    .circle .step,.paragraph{
+        display: none ;
+    }
+    .asideBar1 nav{
+        display: flex;
+        width: 100%;
+    }
+    .circle .section{
+        margin-left:30px;
+    }
+    .mainContainer form{
+        margin-left: 20px;
+        font-size: 13px;
+    }
+
+}
