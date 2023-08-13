@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import "./page1.css";
+import { Link,useNavigate } from 'react-router-dom';
+
+// import Page2 from "./page2"
 export default function Page1(){
+    const navigate = useNavigate();
     const [nameInput, setnameInput] = useState('');
     const [emailInput, setemailInput] = useState('');
     const [phoneNumber, setphoneNumber] = useState('');
@@ -20,7 +24,6 @@ export default function Page1(){
         localStorage.setItem("name",nameInput)
         localStorage.setItem("email",emailInput)
         localStorage.setItem("phone",phoneNumber)
-        window.location.href = '/src/Components/page2'
       };
     
     const [items,setItems] = useState([{
@@ -103,7 +106,7 @@ export default function Page1(){
                             required
                         />
                     </div>
-                    <button type="submit">Next Page</button>
+                        <button onClick={handleSubmit} type="submit"><Link to="/Page2">Submit and Relocate</Link> </button>
                 </form>
             </main>
         </div>
