@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import "./page1.css";
-import { Link,useNavigate } from 'react-router-dom';
-
 // import Page2 from "./page2"
 export default function Page1(){
-    const navigate = useNavigate();
     const [nameInput, setnameInput] = useState('');
     const [emailInput, setemailInput] = useState('');
     const [phoneNumber, setphoneNumber] = useState('');
@@ -24,6 +21,12 @@ export default function Page1(){
         localStorage.setItem("name",nameInput)
         localStorage.setItem("email",emailInput)
         localStorage.setItem("phone",phoneNumber)
+        if (nameInput.trim() === '' || emailInput.trim() === '' || phoneNumber.trim() === '') {
+            alert('All inputs are required');
+          } else {
+            // Redirect to Page2 if all inputs are valid
+            window.location.href = "/Page2"
+        }
       };
     
     const [items,setItems] = useState([{
@@ -106,7 +109,7 @@ export default function Page1(){
                             required
                         />
                     </div>
-                        <button onClick={handleSubmit} type="submit"><Link to="/Page2">Submit and Relocate</Link> </button>
+                        <button type="submit">Next step</button>
                 </form>
             </main>
         </div>
