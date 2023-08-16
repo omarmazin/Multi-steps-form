@@ -71,9 +71,94 @@ a{
     font-weight: 700;  
     font-size: 15px;
 }
-.mainContainer {
-
+.mainContainer .head{
+    font-weight: 900;
+    font-size: 30px;
+    color: rgb(56, 56, 109);
+    
 }
+.mainContainer .head-text{
+    font-size: 13px ;
+    color: var(--Cool-gray);
+}
+.plan-container{
+    display: flex;
+    margin-top: 30px;
+}
+.plan-container .card{
+    margin-right: 30px;
+    border: 1px solid var(--Cool-gray);
+    padding: 30px;
+    border-radius: 5px;
+    
+}
+.plan-container .card img{
+    position: relative;
+    bottom: 15px;
+    right: 10px;
+}
+.plan-container .planName{
+    
+    font-weight: 900;
+    font-size: 15px;
+    color: rgb(56, 56, 109);
+}
+.plan-container .planPrice{
+    font-size: 15px ;
+    color: var(--Cool-gray);
+}
+.toggle-labels{
+    margin-left: 8rem;
+    margin-top: 20px;
+}
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 10px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(20px);
+  }
+  
 @media only screen and (max-width: 800px) {
     body {
         font-size: 11px;
