@@ -90,6 +90,7 @@ a{
     border: 1px solid var(--Cool-gray);
     padding: 30px;
     border-radius: 5px;
+    cursor: pointer;
     
 }
 .plan-container .card img{
@@ -153,12 +154,16 @@ a{
   
   input:checked + .slider {
     background-color: #2196F3;
+    
   }
+  
   
   input:checked + .slider:before {
     transform: translateX(20px);
   }
-  
+.selected {
+    border: blueviolet 1px solid;
+  }
 @media only screen and (max-width: 800px) {
     body {
         font-size: 11px;
