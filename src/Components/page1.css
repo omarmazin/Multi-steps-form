@@ -114,7 +114,7 @@ a{
     color: rgb(20, 20, 49);
     font-weight: 300;
 }
-button{
+.submit{
     margin-top: 90px;
     margin-left: 15rem;
     padding: 12px;

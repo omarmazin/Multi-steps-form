@@ -109,7 +109,7 @@ export default function Page1(){
                             required
                         />
                     </div>
-                        <button type="submit">Next step</button>
+                        <button className="submit" type="submit">Next step</button>
                 </form>
             </main>
         </div>

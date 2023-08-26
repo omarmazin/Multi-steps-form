@@ -157,13 +157,29 @@ a{
     
   }
   
-  
+  .submit{
+    margin-top: 90px;
+    margin-left: 15rem;
+    padding: 12px;
+    color: white;
+    border: none;
+    background-color: var(--blueNumber);
+    border-radius: 5px;
+    cursor: pointer;
+}
   input:checked + .slider:before {
     transform: translateX(20px);
   }
 .selected {
     border: blueviolet 1px solid;
   }
+.back{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    color: #adacac;
+}
 @media only screen and (max-width: 800px) {
     body {
         font-size: 11px;
@@ -190,7 +206,7 @@ a{
         background-color: var(--Alabaster);
         border-radius: 10px;
         margin-top: 6rem;
-        height: 85svh;
+        height: 95vh;
         width: 85%;
     }
     .circle .step,.paragraph{
@@ -202,5 +218,23 @@ a{
     }
     .circle .section{
         margin-left:30px;
+    }
+    .plan-container{
+        flex-direction: column;
+      
+    }
+    .plan-container .card{
+        display: flex;
+    }.planName{
+        margin-left: 10px;
+    }
+    .planPrice{
+        margin-left: 20px;
+    }
+    .back{
+        margin-top: 20px;
+    }
+    .submit{
+        margin-top: 0px;
     }
 }

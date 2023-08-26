@@ -85,9 +85,10 @@ export default function Page2(){
             default:
                 console.error("Not Found");
         }
-
-
       };
+      const back = ()=>{
+        window.location.href = "/"
+      }
       const handleClickYearly = (event) =>{
         const clickedId = event.target.id;
         setClickedDivId(clickedId);
@@ -110,10 +111,6 @@ export default function Page2(){
         }
 
     } 
-    
-      
-
-
     return(
         <div className="page2">
             <aside className="asideBar2">
@@ -169,6 +166,9 @@ export default function Page2(){
                         </label>
                         <span>Yearly</span>
                     </div>
+                    <button className="back" onClick={back} >Go back</button>   
+                    <button className="submit" type="submit">Next Step</button> 
+                     
                 </form>
             </main>
         </div>
