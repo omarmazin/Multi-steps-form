@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+:root{
+    --Light-gray:hsl(229, 24%, 87%);
+    --Cool-gray:hsl(231, 11%, 63%);
+    --Magnolia: hsl(217, 100%, 97%);
+    --Alabaster: hsl(231, 100%, 99%);
+    --White: hsl(0, 0%, 100%);
+    --blueNumber:rgb(55, 55, 138);
+}
+.page3{
+    margin: 50px auto ;
+    width: 70%;
+    height: 80svh;
+    background-color: var(--White);
+    display: flex;
+
+}
+.asideBar3{
+    
+    background: url("../assets/bg-sidebar-desktop.svg");
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: contain;
+    width: 60%;
+    
+    
+}
+.asideBar3 nav{
+    /* background-color: red; */
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding-top: 30px;
+
+}
+.mainContainer .head{
+    font-weight: 900;
+    font-size: 30px;
+    color: rgb(56, 56, 109);
+    
+}
+.mainContainer .head-text{
+    font-size: 13px ;
+    color: var(--Cool-gray);
+}
+.checkbox-container{
+    margin-right: 30px;
+}
+.checkbox-container .div{
+    display: flex;
+    border: 1px blueviolet solid;
+    margin-top: 15px;
+    border-radius: 10px;
+    padding-left: 20px;
+}
+.checkbox-container .subject{
+    margin-left: 20px;
+}
+.checkbox-container .add-price{
+    margin-left: 50px;
+
+}
+.checkbox-container{
+    
+}
+
+
+@media only screen and (max-width: 800px) {
+    body {
+        font-size: 11px;
+    }
+    .page3{
+       background-color: transparent;
+       margin: 0px;
+
+    }
+    .asideBar3{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background-image: url('../assets/bg-sidebar-mobile.svg');
+        padding: 0px;
+        padding-left: 1px;
+        
+    }
+    .mainContainer{
+        /* position: absolute; */
+        z-index: 1;
+        margin-top: 50px;
+        margin-left: 35px;
+        background-color: var(--Alabaster);
+        border-radius: 10px;
+        margin-top: 6rem;
+        height: 95vh;
+        width: 85%;
+    }
+    .circle .step,.paragraph{
+        display: none ;
+    }
+    .asideBar3 nav{
+        display: flex;
+        width: 100%;
+    }
+    .circle .section{
+        margin-left:30px;
+    }
+}

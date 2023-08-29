@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+:root{
+    --Light-gray:hsl(229, 24%, 87%);
+    --Cool-gray:hsl(231, 11%, 63%);
+    --Magnolia: hsl(217, 100%, 97%);
+    --Alabaster: hsl(231, 100%, 99%);
+    --White: hsl(0, 0%, 100%);
+    --blueNumber:rgb(55, 55, 138);
+}
+.checking-container{
+    background-color:   rgb(230, 230, 241);
+    display: flex;
+    justify-content: space-between;
+}

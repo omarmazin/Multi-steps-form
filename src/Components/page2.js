@@ -58,11 +58,14 @@ export default function Page2(){
       };
       
       const handleSubmit = (e) => {
+
         e.preventDefault();
-        const price = window.localStorage.setItem("Price","")
-        const plan = window.localStorage.setItem("Plan","")
+        window.location.href = "/page3"
       }
-      
+      const price = window.localStorage.setItem("Price","")
+      const planner = window.localStorage.setItem("Planner","")
+      const plann = window.localStorage.setItem("Plan","")
+
       const [clickedDivId, setClickedDivId] = useState(null);
 
       const handleClickMonthly = (event) => {
@@ -73,14 +76,17 @@ export default function Page2(){
             case '1':
                 window.localStorage.setItem("Price","9$")
                 window.localStorage.setItem("Plan","mo")
+                window.localStorage.setItem("planner","Arcade")
                 break;
             case '2':
                 window.localStorage.setItem("Price","12$")
                 window.localStorage.setItem("Plan","mo")
+                window.localStorage.setItem("planner","Advanced")
                 break;
             case '3':
                 window.localStorage.setItem("Price","15$")
                 window.localStorage.setItem("Plan","mo")
+                window.localStorage.setItem("planner","Pro")
                 break;
             default:
                 console.error("Not Found");
@@ -97,14 +103,17 @@ export default function Page2(){
             case '1':
                 window.localStorage.setItem("Price","90$")
                 window.localStorage.setItem("Plan","yr")
+                window.localStorage.setItem("planner","Arcade")
                 break;
             case '2':
                 window.localStorage.setItem("Price","120$")
                 window.localStorage.setItem("Plan","yr")
+                window.localStorage.setItem("planner","Advanced")
                 break;
             case '3':
                 window.localStorage.setItem("Price","150$")
                 window.localStorage.setItem("Plan","yr")
+                window.localStorage.setItem("planner","Pro")
                 break;
             default:
                 console.error("Not Found");
